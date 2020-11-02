@@ -32,7 +32,7 @@ $angular-online-shop-theme: mat-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($angular-online-shop-theme);
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
