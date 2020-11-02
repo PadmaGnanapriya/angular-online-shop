@@ -5,3 +5,16 @@
   text-align: center;
   padding-top: 60px;;
 }
+
+.container-wrp{
+  width: 350px;
+  height: 500px;
+  align-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-box-shadow: 0px -1px 30px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 30px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 30px -2px rgba(0,0,0,0.75);
+}
