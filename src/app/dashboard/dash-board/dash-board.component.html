@@ -20,16 +20,34 @@
 </nav>
 
 
-<div class="slider-outer" *ngIf="isVisible">
-<ul>
-  <li><a>Customer</a></li>
-  <li><a>Item</a></li>
-  <li><a>Order</a></li>
-  <li><a>Order Detail</a></li>
-</ul>
-</div>
+<!--<div class="slider-outer" *ngIf="isVisible">-->
+<!--&lt;!&ndash;<ul>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/customer" (click)="changeVisibility()">Customer</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/item" (click)="changeVisibility()">Item</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/order" (click)="changeVisibility()">Order</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/order-detail" (click)="changeVisibility()">Order Detail</li>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--</div>-->
 
-<div style="float: left; background: coral">
-  HSSSSSS
-</div>
+<!--<div class="slider-main-dev">-->
+<!--<ng-container>-->
+<!--&lt;!&ndash;    <router-outlet></router-outlet>&ndash;&gt;-->
+<!--</ng-container>-->
+<!--</div>-->
 
+
+<table style="height: 100%">
+  <tr>
+    <td class="slider-outer" *ngIf="isVisible">
+      <ul>
+        <li routerLink="/dashboard/customer" (click)="changeVisibility()">Customer</li>
+        <li routerLink="/dashboard/item" (click)="changeVisibility()">Item</li>
+        <li routerLink="/dashboard/order" (click)="changeVisibility()">Order</li>
+        <li routerLink="/dashboard/order-detail" (click)="changeVisibility()">Order Detail</li>
+      </ul>
+    </td>
+    <td class="col-10" style="padding: 0; margin: 0">
+      <router-outlet></router-outlet>
+    </td>
+  </tr>
+</table>
