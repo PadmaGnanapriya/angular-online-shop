@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" (click)="changeVisibility()">
+    <img src="./assets/logo.svg" height="28" alt="CoolBrand">
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav">
+      <a href="#" class="nav-item nav-link active">Home</a>
+      <a href="#" class="nav-item nav-link">Profile</a>
+      <a href="#" class="nav-item nav-link">Messages</a>
+      <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+    </div>
+    <div class="navbar-nav ml-auto">
+      <a href="#" class="nav-item nav-link">Login</a>
+    </div>
+  </div>
+</nav>
+
+
+<!--<div class="slider-outer" *ngIf="isVisible">-->
+<!--&lt;!&ndash;<ul>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/customer" (click)="changeVisibility()">Customer</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/item" (click)="changeVisibility()">Item</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/order" (click)="changeVisibility()">Order</li>&ndash;&gt;-->
+<!--&lt;!&ndash;  <li routerLink="/dashboard/order-detail" (click)="changeVisibility()">Order Detail</li>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--</div>-->
+
+<!--<div class="slider-main-dev">-->
+<!--<ng-container>-->
+<!--&lt;!&ndash;    <router-outlet></router-outlet>&ndash;&gt;-->
+<!--</ng-container>-->
+<!--</div>-->
+
+
+<table style="height: 100%">
+  <tr>
+    <td class="slider-outer" *ngIf="isVisible">
+      <ul>
+        <li routerLink="/dashboard/customer" (click)="changeVisibility()">Customer</li>
+        <li routerLink="/dashboard/item" (click)="changeVisibility()">Item</li>
+        <li routerLink="/dashboard/order" (click)="changeVisibility()">Order</li>
+        <li routerLink="/dashboard/order-detail" (click)="changeVisibility()">Order Detail</li>
+      </ul>
+    </td>
+    <td class="col-10" style="padding: 0; margin: 0">
+      <router-outlet></router-outlet>
+    </td>
+  </tr>
+</table>
