@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginAndSignUpComponent } from './root/login-and-sign-up/login-and-sign-up.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatTabsModule} from '@angular/material/tabs';
+import { DashBoardComponent } from './dashboard/dash-board/dash-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginAndSignUpComponent
+    LoginAndSignUpComponent,
+    DashBoardComponent
   ],
   imports: [
     BrowserModule,
