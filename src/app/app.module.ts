@@ -8,6 +8,7 @@ import { LoginAndSignUpComponent } from './root/login-and-sign-up/login-and-sign
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatTabsModule} from '@angular/material/tabs';
 import { DashBoardComponent } from './dashboard/dash-board/dash-board.component';
+import {MatOption, MatOptionModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DashBoardComponent } from './dashboard/dash-board/dash-board.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatTabsModule
+    MatTabsModule,
+    MatOptionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

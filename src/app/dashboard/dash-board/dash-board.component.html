@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a href="#" class="navbar-brand">
+  <a class="navbar-brand" (click)="changeVisibility()">
     <img src="./assets/logo.svg" height="28" alt="CoolBrand">
   </a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -18,3 +18,18 @@
     </div>
   </div>
 </nav>
+
+
+<div class="slider-outer" *ngIf="isVisible">
+<ul>
+  <li><a>Customer</a></li>
+  <li><a>Item</a></li>
+  <li><a>Order</a></li>
+  <li><a>Order Detail</a></li>
+</ul>
+</div>
+
+<div style="float: left; background: coral">
+  HSSSSSS
+</div>
+

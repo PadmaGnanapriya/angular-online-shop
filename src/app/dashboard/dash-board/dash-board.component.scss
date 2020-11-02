@@ -12,3 +12,43 @@
     transform: rotate(360deg);
   }
 }
+
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 12px;
+  border: 1px solid #555;
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slider-outer{
+  width: 200px;
+  float: left;
+  height: 100%;
+  font-size: 1.3em;
+  background: aliceblue;
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    padding: 4px 25px;
+  }
+
+  li:hover{
+    cursor: pointer;
+    background: #f1f1f1;
+  }
+}
+
+.navbar-brand{
+  cursor: pointer;
+}
